@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://avatars.githubusercontent.com/u/78729990?v=4](https://avatars.githubusercontent.com/u/150291133?v=4)" alt="Portfolio Screenshot" width="100" style="border-radius: 10px;" />
+  <img src="https://avatars.githubusercontent.com/u/150291133" alt="Portfolio Screenshot" width="100" style="border-radius: 10px;" />
 </p>
 
 ## Info about my portfolio
