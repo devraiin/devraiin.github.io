@@ -1,7 +1,3 @@
-// Made by Lummit - https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
-// Credits to expl0it, shellcode.team
-// GitHub: https://github.com/Lumm1t/obnoxious.club
-
 class _app {
   id = 0;
   videoElement = null;
@@ -35,6 +31,23 @@ class _app {
       ++counter;
     }, delay);
   };
+
+  playMusic = (musicUrl) => {
+    if (!musicUrl) return;
+
+   
+    if (!this.audioElement) {
+      this.audioElement = new Audio();
+      this.audioElement.volume = this.musicVolume;
+    }
+
+    this.audioElement.src = musicUrl; 
+    this.audioElement.loop = true; 
+    this.audioElement.play().catch((err) => {
+      console.error("Error playing music:", err);
+    });
+  };
 }
 
 const app = new _app();
+app.playMusic('assets/song.mp3');
