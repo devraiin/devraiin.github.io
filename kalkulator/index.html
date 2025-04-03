@@ -9,47 +9,11 @@
   <link rel="stylesheet" href="dist/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <style>
-    .page-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #24292f;
-      color: white;
-    }
-
-    .page-header__title {
-      margin: 0;
-      font-size: 1.5em;
-    }
-
-    .page-header .github-icon, .page-header .website-icon {
-      font-size: 2em;
-      color: white;
-      text-decoration: none;
-      margin-left: 10px;
-      transition: color 0.3s ease;
-      
-    }
-    
-    .website-icon {
-        margin-bottom: 30px;
-    }
-
-    .page-header .github-icon:hover, .page-header .website-icon:hover {
-      color: #6cc644;
-    }
-
-    .website-icon {
-      font-size: 1.6em; 
-    }
-  </style>
 </head>
 <body>
 
     <header class="page-header">
-        <h1 class="page-header__title">Kreditni kalkulator i poređenje</h1>
+        <h1 class="page-header__title">Kreditni kalkulator</h1>
         <div>
           <a href="https://github.com/devraiin" target="_blank" class="github-icon">
             <i class="fab fa-github"></i>
@@ -59,6 +23,13 @@
           </a>
         </div>
     </header>
+
+    <!--    sta je mehmede   -->
+
+    <div id="notification" class="notification">
+      <p id="notification-message"></p>
+      <button id="ok-button" class="ok-button">OK</button>
+    </div>
       
 
   <div class="table-responsive">
@@ -93,7 +64,8 @@
     <button id="addCompareRow">Dodaj novi</button>
   </div>
 
-  <hr>
+
+    <hr>
 
   <div id="chart"></div>
 
@@ -118,6 +90,7 @@
     "add_new_row":"Dodaj novi red"}
   </script>
   <script src="dist/js/main.js"></script>
+    <script src="dist/js/sigma.js" defer></script>
 
   
 </body>

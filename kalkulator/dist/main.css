@@ -15,7 +15,7 @@ html {
   a {
     color: #800;
   }
-  
+
   button {
     background: linear-gradient(to bottom, #fff 0%, #ffffff 100%);
     border: 1px solid #aaa;
@@ -40,6 +40,39 @@ html {
     border: 0;
     border-bottom: 1px solid #aaa;
   }
+
+  .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #24292f;
+    color: white;
+    position: relative;
+  }
+
+  .page-header__title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .page-header .github-icon, .page-header .website-icon {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+
+  .page-header .github-icon:hover, .page-header .website-icon:hover {
+    color: #6cc644;
+  }
+
+  .page-header .github-icon, .page-header .website-icon {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
   
   .no-border {
     border: 0;
@@ -48,13 +81,11 @@ html {
   .tc { text-align: center; }
   
   
-  /*-- Header --*/
   .page-header {
     text-align: center;
     margin-bottom: 64px;
   }
   
-  /*-- Table --*/
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -83,10 +114,53 @@ html {
   .table-hr {
     border-right: 1px solid #aaa;
   }
-  
-  
-  
-  /*-- Chart --*/
+
+
+/* Notification Styling */
+.notification {
+  position: fixed;
+  top: 80px; /* Adjust to be below the header */
+  right: -400px; /* Start off-screen */
+  width: 300px;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: right 0.5s ease-in-out;
+}
+
+.notification.show {
+  right: 20px;
+}
+
+.notification p {
+  margin-bottom: 15px;
+}
+
+.ok-button {
+  background-color: #444;
+  color: #585858;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ok-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/*-- Chart --*/
   .c3 svg {
     font: 10px sans-serif;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
