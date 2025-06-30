@@ -5,13 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Školski Raspored</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const savedTheme = localStorage.getItem('tema');
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module" crossorigin src="./assets/index-4901924f.js"></script>
-    <link rel="stylesheet" href="./assets/index-7074c226.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#0ea5e9">
+    <script type="module" crossorigin src="./assets/index-Co9YrBfC.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dwvw8JW3.css">
   </head>
   <body>
     <div id="root"></div>
-  
   </body>
 </html>
